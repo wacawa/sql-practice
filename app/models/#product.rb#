@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+class Product < ApplicationRecord
+  product_list = []
+  product_list << Product.new(product_cd: 1006, product_name: "キウイ", price: 98, availability: 100)
+  product_list << Product.new(product_cd: 1007, product_name: "マンゴー", price: 2000, availability: 3)  product_list << Product.new(product_cd: 1008, product_name: "オレンジ", price: 170, availability: 30)
+  product_list << Product.new(product_cd: 1009, product_name: "オレンジ", price: 170, availability: 30)
+  product_list << Product.new(product_cd: 1010, product_name: "オレンジ", price: 170, availability: 30)
+  Product.import product_list
+end
